@@ -114,35 +114,35 @@
 
 // Задача 4: Напишите программу, которая на вход принимает натуральное число N, а на выходе показывает его цифры через запятую.
 
-using System;
+// using System;
 
-class Answer {
-    static void PrintDigits(int number)
-    {
-        string digits = "";
-        while (number > 0)
-        {
-            int digit = number % 10;
-            digits = digit + ", " + digits;
-            number = number / 10;
-        }
-        digits = digits.Remove(digits.Length - 2);
-        Console.WriteLine($"Цифры числа через запятую: {digits}");
-    }
+// class Answer {
+//     static void PrintDigits(int number)
+//     {
+//         string digits = "";
+//         while (number > 0)
+//         {
+//             int digit = number % 10;
+//             digits = digit + ", " + digits;
+//             number = number / 10;
+//         }
+//         digits = digits.Remove(digits.Length - 2);
+//         Console.WriteLine($"Цифры числа через запятую: {digits}");
+//     }
 
-    static public void Main(string[] args) {
-        int inputNumber;
+//     static public void Main(string[] args) {
+//         int inputNumber;
 
-        if (args.Length >= 1) {
-            inputNumber = int.Parse(args[0]);
-        } else {
-            inputNumber = 197452;
-        }
+//         if (args.Length >= 1) {
+//             inputNumber = int.Parse(args[0]);
+//         } else {
+//             inputNumber = 197452;
+//         }
 
-        if (inputNumber > 0) {
-            PrintDigits(inputNumber);
-        } else {
-            Console.WriteLine("Число должно быть натуральным");
-        }
-    }
-}
+//         if (inputNumber > 0) {
+//             PrintDigits(inputNumber);
+//         } else {
+//             Console.WriteLine("Число должно быть натуральным");
+//         }
+//     }
+// }
